@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  overflow-x: hidden;
+  background: #f1eff7;
+}
+
+:root {
+  --orange: #fb6340;
+  --green: #2dce89;
+  --red: #f5365c;
+  --grey: #8898aa;
+  --secondary: #f7fafc;
+  --primary: #5e72e4;
+}
+
+.LeftPrimary {
+  width: 20vw;
+  background: #22242a;
+  height: auto;
+}
+
+.RightPrimary {
+  width: 80vw;
+  height: 100%;
+}
+
+.navbarAdmin {
+  width: 100%;
+  background: #fff;
+  height: 70px;
+  box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.navbarLeft {
+  line-height: 70px;
+}
+
+.navbarRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  z-index: 1;
+}
+
+.WrapperInput {
+  margin-top: 5%;
+  display: block;
+  width: 300px;
+  height: 50px;
+}
+
+.MoreProfile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 1vw;
+}
+
+.clickValueProfile img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.clickValueProfile p {
+  cursor: pointer;
+  color: #fff;
+  transform: translateY(2.2vh);
+  transition: 0.5s;
+}
+
+.clickValueProfile p:hover {
+  opacity: 0.5;
+}
+
+.leftProfile i {
+  color: var(--white);
+  cursor: pointer;
+  margin-right: 35px;
+}
+
+.sideNav-link {
+  height: 10vh;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.sideNav-link.activeBG {
+  background: var(--blue);
+  color: #fff;
+  width: 100%;
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+}
+
+.sideNav-link li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+
+.sideNav-link li a.activeColor {
+  color: var(--white);
+}
+
+.sideNav-link li a {
+  color: var(--light);
+  display: flex;
+  align-items: center;
+}
+
+.sideNav-link li a i {
+  margin-right: 10px;
+  margin-top: 15%;
+}
+
+.slideDown-Profile {
+  z-index: 2000;
+  display: none;
+  background: var(--white);
+  padding: 15px 25px;
+  border-radius: 7px;
+  position: absolute;
+  top: 200%;
+  opacity: 0;
+  right: 0vw;
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.contentSlide-Profile a {
+  transition: 0.5s;
+  padding: 0 10px;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+}
+
+.contentSlide-Profile a:hover {
+  width: 100%;
+  border-radius: 5px;
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+}
+
+.contentSlide-Profile a i {
+  margin-right: 20px;
+}
+
+.contentSlide-Profile a p {
+  transform: translateY(1.2vh);
+}
+
+.contentRight {
+  width: 100%;
+}
+
+.cardInfoData {
+  width: 100%;
+  padding: 15px 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.KotakInfoData {
+  width: 32px;
+  height: 32px;
+  background: var(--secondary);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.KotakInfoData i {
+  font-size: 13px;
+}
+
+.cardEmploye {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+}
+
+.cardTableData {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.btn-table {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.headerEmploye h5 {
+  padding: 25px;
+  font-size: 17px;
+}
+
+.contentEmploye table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#contentTable #TableOrder {
+  padding-top: 25px;
+}
+
+.contentEmploye table thead {
+  background: var(--secondary);
+}
+
+.contentEmploye table thead th {
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#contentTable #TableOrder thead th {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+#contentTable #TableOrder-2 thead th {
+  text-align: start;
+}
+
+.contentEmploye table tbody td {
+  padding: 20px;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  text-transform: normal;
+}
+
+#contentTable #TableOrder tbody td {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+#contentTable #TableOrder-2 tbody td {
+  text-align: start;
+}
+
+.leftFooter a,
+.rightFooter {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: var(--grey);
+}
+
+.leftFooter a:hover {
+  color: var(--grey);
+}
+
+.cardEditMenu {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.BackDashbord {
+  font-weight: 400;
+  color: var(--grey);
+  font-size: 15px;
+}

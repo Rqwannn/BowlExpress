@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
+  overflow-x: hidden;
+  background: #f1eff7;
+}
+
+:root {
+  --grey: #8898aa;
+  --orange: #fb6340;
+}
+
+.cardLeft,
+.cardRight {
+  width: 100%;
+  padding: 25px 35px 35px 35px;
+  border-radius: 7px;
+  box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.cardRight {
+  position: relative;
+  padding: 0;
+}
+
+.cardRight::after {
+  content: "";
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+.cardLeft table {
+  width: 100%;
+}
+
+.cardLeft table thead tr {
+  height: 50px;
+}
+
+.cardLeft table thead th {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cardLeft table tbody tr {
+  height: 40px;
+  border-top: 1px solid #000;
+}
+
+.cardLeft table tbody tr td {
+  font-weight: 400;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.TotalHarga p {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.TotalHarga p:nth-child(2) {
+  color: var(--orange);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.footerCard p {
+  font-weight: 400;
+  color: var(--grey);
+  font-size: 15px;
+}
+
+.HeaderRight img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.ContentRight {
+  padding: 25px;
+}
+
+.TextContentRight {
+  font-size: 15px;
+}

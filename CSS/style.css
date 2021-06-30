@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
+  overflow-x: hidden;
+}
+
+:root {
+  --orange: #fb6340;
+  --green: #2dce89;
+  --red: #f5365c;
+}
+
+.PassScroll.navbarMenu {
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  background: var(--orange);
+  padding: 0 40px;
+  color: #fff;
+}
+
+.PassScroll .linkMenu ul li a {
+  color: #fff;
+}
+
+.PassScroll .linkMenu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 1.5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.PassScroll .linkMenu ul li a:hover::after {
+  width: 100%;
+}
+
+.PassScroll .linkMenu ul li:hover a {
+  color: #fff;
+}
+
+.PassScroll .linkMenu ul li:last-child a:hover::after {
+  width: 100%;
+}
+
+.PassScroll .linkMenu ul li:last-child a {
+  padding: 0;
+}
+
+.navbarMenu {
+  padding: 0 20px;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  border-radius: 0px;
+  transition: 0.5s;
+  z-index: 100;
+}
+
+.LogoNav h3 {
+  line-height: 70px;
+  color: #fff;
+}
+
+.linkMenu ul {
+  line-height: 70px;
+  display: flex;
+}
+
+.linkMenu ul li {
+  list-style: none;
+  margin-left: 30px;
+  opacity: 1;
+  transition: 0.5s;
+  font-size: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.linkMenu ul li:last-child a {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  background: var(--orange);
+}
+
+.linkMenu ul li:last-child a:hover::after {
+  width: 0%;
+}
+
+.linkMenu ul li a {
+  text-decoration: none;
+  color: #fff;
+  z-index: 100;
+  position: relative;
+  transition: 0.5s;
+}
+
+.linkMenu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 1.5px;
+  background-color: var(--orange);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.linkMenu ul li a:hover::after {
+  width: 100%;
+}
+
+.linkMenu ul li:hover a {
+  color: var(--orange);
+}
+
+.linkMenu ul li:hover:last-child a {
+  color: white;
+}
+
+.ImhHeader img {
+  height: 100vh;
+  width: 100%;
+}
+
+.contentLocation-Left h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.phoneNumber {
+  margin-left: 10px;
+  color: var(--orange);
+}
+
+.OurMenu {
+  background: #f1eff7;
+  padding: 50px 0;
+}
+
+.AllMenu ul {
+  display: flex;
+}
+
+.AllMenu ul li {
+  list-style: none;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.AllMenu ul li i {
+  font-size: 22px;
+}
+
+.AllMenu ul li span {
+  font-size: 16px;
+}
+
+.contenrAllMenu,
+.OwlMenu {
+  width: 100%;
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+
+.cardAllMenu {
+  width: 325px;
+  border-radius: 10px;
+  position: relative;
+  background: transparent;
+  margin: 5% 0 5% 5%;
+}
+
+.cardAllMenu img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cardContentMenu {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  transform: translateY(-30%);
+  background: #fff;
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.circleHot,
+.circleGreen {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.circleRelative,
+.circleFix {
+  width: 15px;
+  height: 15px;
+  background: var(--red);
+  border-radius: 50%;
+  position: relative;
+}
+
+.circleFix {
+  background: var(--green);
+}
+
+.circleHot:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--red);
+  border-radius: 50%;
+}
+
+.circleGreen::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--green);
+  border-radius: 50%;
+}
+
+.BookingBtn {
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -20%);
+}
+
+.BookingBtn button {
+  padding: 7px 50px;
+  margin: 0;
+  background: var(--orange);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.OurDescription {
+  width: 100%;
+  padding: 50px 0;
+  background: #24262b;
+}
+
+.OurDescription-Left img {
+  width: 100%;
+}
+
+.OurDescription-Right p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.OurInfo {
+  width: 100%;
+}
+
+.WrapperInfo-Left,
+.WrapperInfo-Middle,
+.WrapperInfo-Right {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: #f1eff7;
+}
+
+.contentInfo p {
+  font-size: 13.5px;
+  margin-bottom: 0;
+}
+
+.Footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #24262b;
+}
+
+.contentFooter p:last-child {
+  font-size: 13.5px;
+  margin: 0 300px;
+}
+
+.SocialMedia i {
+  font-size: 25px;
+  margin-left: 10px;
+}
